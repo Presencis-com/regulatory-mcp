@@ -1,0 +1,33 @@
+{
+  "name": "@presencis/regulatory-mcp",
+  "version": "1.0.0",
+  "description": "Read-only stdio MCP server for public Presencis regulatory frameworks, crosswalks, and compliance questions.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "regulatory-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "data/corpus-snapshot.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "sync": "node scripts/sync-corpus.mjs",
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}
