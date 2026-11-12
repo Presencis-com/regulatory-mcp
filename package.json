@@ -29,5 +29,26 @@
   "devDependencies": {
     "@types/node": "^22.13.4",
     "typescript": "^5.7.3"
+  },
+  "author": "Presencis Ltd <github@presencis.com>",
+  "homepage": "https://github.com/Presencis-com/regulatory-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Presencis-com/regulatory-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Presencis-com/regulatory-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-governance",
+    "eu-ai-act",
+    "regulatory-compliance",
+    "dora",
+    "nis2"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
