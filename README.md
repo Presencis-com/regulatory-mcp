@@ -29,7 +29,7 @@ node dist/index.js
 
 ## Clients
 
-The same command works for Claude Desktop, Cursor, and Antigravity. After this package is published:
+The same `npx` configuration works for Claude Desktop, Cursor, and Antigravity:
 
 ```json
 {
@@ -42,6 +42,12 @@ The same command works for Claude Desktop, Cursor, and Antigravity. After this p
 }
 ```
 
-Until publish, point `command` at `node` and `args` at the absolute path of `dist/index.js`.
+For a local checkout build, point `command` at `node` and `args` at the absolute path of `dist/index.js`.
+
+## Related Documentation
+
+- [Presencis Regulatory Corpus](https://presencis.com/regulations/) · [Compliance Q&A](https://presencis.com/questions/)
+- [Aegis Regulatory Readiness](https://presencis.com/solutions/aegis/) · [Vigil Estate Visibility](https://presencis.com/solutions/vigil/)
+- [Sovereign AI OS](https://presencis.com/solutions/sovereign-ai-os/) · [Forge Prover](https://presencis.com/solutions/forge-prover/) · [Edge Mend](https://presencis.com/solutions/edge-mend/)
 
 Apache-2.0.
