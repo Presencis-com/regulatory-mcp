@@ -31,7 +31,7 @@
     "typescript": "^5.7.3"
   },
   "author": "Presencis Ltd <github@presencis.com>",
-  "homepage": "https://presencis.com/compliance/",
+  "homepage": "https://presencis.com/regulations/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Presencis-com/regulatory-mcp.git"
