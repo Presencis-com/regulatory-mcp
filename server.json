@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Presencis-com/regulatory-mcp",
-  "description": "Read-only stdio MCP server for public regulatory frameworks and crosswalks.",
-  "version": "1.0.2",
+  "description": "Read-only MCP server for 51 AI & security regulations, framework crosswalks, and 11 global health-data secondary-use gateways.",
+  "version": "1.1.0",
   "websiteUrl": "https://presencis.com/regulations/",
   "repository": {
     "url": "https://github.com/Presencis-com/regulatory-mcp",
@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "identifier": "@presencis/regulatory-mcp",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "transport": {
         "type": "stdio"
       }

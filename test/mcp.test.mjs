@@ -100,7 +100,7 @@ test("sanitizer fixes the corpus typo and drops capability paragraphs", () => {
   assert.throws(() => regulationList("NOT ID", "fixture"), /malformed regulation id/);
 });
 
-test("stdio MCP serves five read-only tools and rejects bad ids", async () => {
+test("stdio MCP serves seven read-only tools and rejects bad ids", async () => {
   const client = startServer();
   try {
     const init = await client.request("initialize", {
@@ -118,6 +118,8 @@ test("stdio MCP serves five read-only tools and rejects bad ids", async () => {
       "find_crosswalk",
       "search_compliance_qa",
       "map_sector_obligations",
+      "list_health_data_gateways",
+      "get_health_data_gateway",
     ]);
 
     const all = toolText(await client.request("tools/call", { name: "list_frameworks", arguments: {} }));

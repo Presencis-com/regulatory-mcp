@@ -11,6 +11,8 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { CallToolRequestSchema, ListToolsRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
 
+import { getHealthGatewayInput, listHealthGatewaysInput, loadHealthGateways } from "./health-data-gateways.js";
+
 type Framework = {
   id: string;
   name: string;
@@ -96,6 +98,7 @@ function loadSnapshot(): Snapshot {
 }
 
 const snapshot = loadSnapshot();
+const healthGateways = loadHealthGateways();
 const frameworks = new Map(snapshot.frameworks.map((item) => [item.id, item]));
 const sectors = new Map(snapshot.sectors.map((item) => [item.id, item]));
 const jurisdictions = new Set(snapshot.frameworks.map((item) => item.jurisdiction));
@@ -155,6 +158,18 @@ const tools = [
     name: "map_sector_obligations",
     description: "List active frameworks mapped to a sector and the published sector description. Does not invent article-level duties.",
     inputSchema: inputSchema(sectorInput),
+    annotations: { readOnlyHint: true },
+  },
+  {
+    name: "list_health_data_gateways",
+    description: "List public atlas entries with optional exact jurisdiction and secure-environment filters.",
+    inputSchema: inputSchema(listHealthGatewaysInput),
+    annotations: { readOnlyHint: true },
+  },
+  {
+    name: "get_health_data_gateway",
+    description: "Get a public health data atlas entry and its official citations by exact gateway id.",
+    inputSchema: inputSchema(getHealthGatewayInput),
     annotations: { readOnlyHint: true },
   },
 ];
@@ -310,11 +325,29 @@ function callTool(name: string, args: unknown) {
       obligationsSummary: `${sector.description} Active frameworks: ${items.map((item) => item.officialName).join("; ")}.`,
     });
   }
+  if (name === "list_health_data_gateways") {
+    const parsed = parse(listHealthGatewaysInput, args);
+    if (!parsed.ok) return fail(parsed.message);
+    const { jurisdiction } = parsed.data;
+    if (jurisdiction !== undefined && !healthGateways.hasJurisdiction(jurisdiction)) {
+      return fail(`unknown jurisdiction: ${jurisdiction}`);
+    }
+    const gateways = healthGateways.list(parsed.data);
+    return ok({ count: gateways.length, gateways });
+  }
+  if (name === "get_health_data_gateway") {
+    const parsed = parse(getHealthGatewayInput, args);
+    if (!parsed.ok) return fail(parsed.message);
+    const id = parsed.data.gateway_id;
+    const gateway = healthGateways.get(id);
+    if (!gateway) return fail(`unknown gateway id: ${id}`);
+    return ok({ gateway });
+  }
   return fail(`unknown tool: ${name}`);
 }
 
 const server = new Server(
-  { name: "regulatory-mcp", version: "1.0.0" },
+  { name: "regulatory-mcp", version: "1.1.0" },
   { capabilities: { tools: {} } },
 );
 

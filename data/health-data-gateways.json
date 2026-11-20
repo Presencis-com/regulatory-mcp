@@ -1,0 +1,256 @@
+[
+  {
+    "gateway_id": "eu-ehds",
+    "jurisdiction": "European Union",
+    "authority_name": "European Health Data Space (EHDS) health data access bodies",
+    "route_type": "research-access",
+    "legal_basis": "Regulation (EU) 2025/327, Articles 53(1)(e), 67(2), 68, 73 and 105.",
+    "ai_secondary_use_scope": "Qualifying scientific research in health or care can include training, testing and evaluation of algorithms, including AI systems and medical devices. Pseudonymised data requires justification when anonymous data will not suffice.",
+    "spe_or_sde_required": true,
+    "required_application_evidence": [
+      "Applicant, professional roles and intended users",
+      "Permitted purpose, intended use and expected benefit",
+      "Requested data, sources, time range and formats",
+      "Justification for pseudonymised data, if requested",
+      "Description of any datasets brought into the environment",
+      "Safeguards, duration, tools and computing needs",
+      "Ethics assessment or opt-out exception justification where applicable"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "In force 26 March 2025. General application and specified secondary-use provisions from 26 March 2027. Chapter IV generally applies from 26 March 2029 and specified additional data categories from 26 March 2031. Article 68 allows three months to decide a complete permit application, extendable by three months with notice and reasons. Article 73 requires permits to use a secure processing environment with only non-personal data downloadable.",
+    "official_source_urls": [
+      "https://publications.europa.eu/resource/cellar/531b8c37-f962-11ef-b7db-01aa75ed71a1.0006.01/DOC_1",
+      "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/ehds/"
+  },
+  {
+    "gateway_id": "fi-findata",
+    "jurisdiction": "Finland",
+    "authority_name": "Findata",
+    "route_type": "research-access",
+    "legal_basis": "Act on the Secondary Use of Health and Social Data (552/2019).",
+    "ai_secondary_use_scope": "Individual-level permit data can support eligible scientific research, including qualifying AI studies. Development and innovation have a separate data request route for aggregate statistical data.",
+    "spe_or_sde_required": true,
+    "required_application_evidence": [
+      "Applicable purpose and dataset definition",
+      "Current research plan and responsible organisation's research permit for scientific research",
+      "Ethics opinion where required",
+      "Processing location and users"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "Submit through Findata's e-service. Processing varies by complexity and whether data holders need to be consulted. Analyse individual-level data in Kapseli or another eligible secure environment. Findata checks outputs exported from Kapseli against anonymisation criteria.",
+    "official_source_urls": [
+      "https://www.finlex.fi/fi/lainsaadanto/2019/552",
+      "https://findata.fi/en/permits/",
+      "https://findata.fi/en/kapseli/"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "de-fdz",
+    "jurisdiction": "Germany",
+    "authority_name": "BfArM Research Data Centre for Health (FDZ Gesundheit)",
+    "route_type": "research-access",
+    "legal_basis": "Health Data Utilisation Act (GDNG) § 3 and Social Code Book V §§ 303d–303e.",
+    "ai_secondary_use_scope": "Section 303e includes development, training, validation and testing of AI systems in health care among permitted purposes. The applicant must justify why the requested data are needed for the purpose.",
+    "spe_or_sde_required": true,
+    "required_application_evidence": [
+      "Applicant and authorised purpose",
+      "Why the data scope and structure are necessary",
+      "Justification for pseudonymised individual data where needed"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "Use the FDZ application portal for FDZ data. Individual datasets are processed under FDZ control. The access and coordination office established under GDNG § 3 is a separate function that BfArM describes as under development.",
+    "official_source_urls": [
+      "https://www.gesetze-im-internet.de/gdng/__3.html",
+      "https://www.gesetze-im-internet.de/sgb_5/__303e.html",
+      "https://www.bfarm.de/DE/Das-BfArM/Aufgaben/Datenzugangs-und-Koordinierungsstelle/_node.html",
+      "https://www.forschungsdatenzentrum-gesundheit.de/infoportal/antragsvorbereitung/allgemeines"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "fr-snds",
+    "jurisdiction": "France",
+    "authority_name": "Health Data Hub (Plateforme des données de santé) / SNDS",
+    "route_type": "research-access",
+    "legal_basis": "French health research authorisation and the national health data system (SNDS) access framework.",
+    "ai_secondary_use_scope": "Public-interest health research may request eligible SNDS data for a justified study, including AI research where it meets the applicable access conditions. The authorisation route uses CNIL review. Research strictly covered by an applicable reference methodology can follow its separate procedure.",
+    "spe_or_sde_required": true,
+    "required_application_evidence": [
+      "Scientific protocol and public interest rationale",
+      "Requested data and linkage annex for SNDS where applicable",
+      "CNIL submission form and applicable privacy and security materials"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "For projects requiring authorisation, submit the dossier for review and CNIL decision. For data in the Health Data Hub warehouse, approved projects work on its technological platform.",
+    "official_source_urls": [
+      "https://www.cnil.fr/fr/demande-dautorisation-dune-recherche-en-sante-les-informations-fournir-et-les-criteres-doctroi",
+      "https://www.health-data-hub.fr/starter-kit",
+      "https://www.health-data-hub.fr/page/kit-documentaire-acces-base-de-donnees-catalogue-snds"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "uk-nhs-sde",
+    "jurisdiction": "United Kingdom",
+    "authority_name": "NHS England Secure Data Environment and Data Access Request Service",
+    "route_type": "research-access",
+    "legal_basis": "Secure data environment policy for NHS health and social care data in England and the NHS England DARS access process.",
+    "ai_secondary_use_scope": "Approved secondary uses, such as eligible research and analysis, can use the SDE under the Five Safes framework. AI work must fit the approved purpose and data terms.",
+    "spe_or_sde_required": true,
+    "required_application_evidence": [
+      "Appropriate data access request with purpose and public benefit",
+      "Legal, ethical, security and information governance evidence",
+      "Approved users and data sharing terms"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "DARS timing depends on the application. Source data stay in the SDE under the policy, with tightly limited exceptions. Only outputs cleared for disclosure can leave the service.",
+    "official_source_urls": [
+      "https://www.gov.uk/government/publications/secure-data-environment-policy-guidelines/secure-data-environment-for-nhs-health-and-social-care-data-policy-guidelines",
+      "https://digital.nhs.uk/services/data-access-request-service-dars",
+      "https://digital.nhs.uk/services/secure-data-environment-service"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "uk-mhra",
+    "jurisdiction": "United Kingdom",
+    "authority_name": "Medicines and Healthcare products Regulatory Agency (MHRA)",
+    "route_type": "device-evidence",
+    "legal_basis": "UK Medical Devices Regulations 2002, MHRA software guidance, UK GDPR and Data Protection Act 2018.",
+    "ai_secondary_use_scope": "Medical purpose and applicable device rules determine whether AI software is a regulated medical device. Device evidence does not grant data access. For use of personal health data, identify a UK GDPR lawful basis and special-category condition, with Data Protection Act safeguards where applicable.",
+    "spe_or_sde_required": false,
+    "required_application_evidence": [
+      "Intended medical purpose and device classification",
+      "Technical and clinical evidence appropriate to device and market route",
+      "Documented data protection basis and safeguards where personal data are processed"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": false,
+    "key_milestones_or_timelines": "MHRA published its change programme roadmap and updated it on 14 June 2023. Check the current device requirements for the intended market, including rules specific to Great Britain and Northern Ireland.",
+    "official_source_urls": [
+      "https://www.legislation.gov.uk/uksi/2002/618/contents",
+      "https://www.gov.uk/government/publications/medical-devices-software-applications-apps",
+      "https://www.gov.uk/government/publications/software-and-ai-as-a-medical-device-change-programme/software-and-ai-as-a-medical-device-change-programme-roadmap",
+      "https://www.legislation.gov.uk/eur/2016/679/contents",
+      "https://www.legislation.gov.uk/ukpga/2018/12/contents"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "us-fda",
+    "jurisdiction": "United States",
+    "authority_name": "Food and Drug Administration (FDA)",
+    "route_type": "device-evidence",
+    "legal_basis": "FDA final guidance on predetermined change control plans for AI-enabled device software functions and demographic reporting in medical device clinical studies.",
+    "ai_secondary_use_scope": "Device submissions can include a predetermined change control plan for planned changes to an AI-enabled device software function. Clinical evidence should address relevant demographic representation and performance. Data access and privacy are handled separately.",
+    "spe_or_sde_required": false,
+    "required_application_evidence": [
+      "Planned modifications, modification protocol and impact assessment for a proposed change control plan",
+      "Performance evidence matched to intended use",
+      "Evaluation and reporting by relevant age, race and ethnicity groups for applicable clinical studies"
+    ],
+    "subgroup_or_bias_evidence_expected": true,
+    "disclosure_control_expected": false,
+    "key_milestones_or_timelines": "The cited final change-control-plan guidance is dated August 2025. Review timing depends on the applicable device submission pathway.",
+    "official_source_urls": [
+      "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence",
+      "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/evaluation-and-reporting-age-race-and-ethnicity-specific-data-medical-device-clinical-studies"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "us-hipaa",
+    "jurisdiction": "United States",
+    "authority_name": "HIPAA Privacy Rule de-identification",
+    "route_type": "privacy-rule",
+    "legal_basis": "45 CFR § 164.514(a)–(c), including the Expert Determination and Safe Harbor methods in § 164.514(b).",
+    "ai_secondary_use_scope": "Information de-identified to the standard is outside HIPAA's protections for individually identifiable information. Access to identifiable data depends on a separate permissible route. This rule does not grant access to any dataset.",
+    "spe_or_sde_required": false,
+    "required_application_evidence": [
+      "Expert Determination: qualified expert documents methods and results showing a very small identification risk",
+      "Safe Harbor: remove the specified identifiers and have no actual knowledge that the remainder could identify an individual"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "Apply and document the chosen de-identification method before treating data as de-identified. The rule does not set a permit decision clock.",
+    "official_source_urls": [
+      "https://www.govinfo.gov/content/pkg/CFR-2025-title45-vol2/xml/CFR-2025-title45-vol2-sec164-514.xml"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "ca-health-canada",
+    "jurisdiction": "Canada",
+    "authority_name": "Health Canada and provincial health-data routes",
+    "route_type": "device-evidence",
+    "legal_basis": "Health Canada pre-market guidance for machine learning-enabled medical devices and, as a provincial example, Ontario's Personal Health Information Protection Act, 2004 (PHIPA) § 44.",
+    "ai_secondary_use_scope": "The federal guidance covers Class II–IV device licence applications and relevant subgroup testing. Data access is a separate step. Ontario PHIPA § 44 describes one route for a custodian to disclose personal health information for research under specified safeguards.",
+    "spe_or_sde_required": false,
+    "required_application_evidence": [
+      "Device intended use, training and evaluation data description and class-appropriate performance and clinical evidence",
+      "Results for relevant subgroups and uncertainty where applicable",
+      "For Ontario § 44 disclosure: written research plan, research ethics board decision and custodian agreement"
+    ],
+    "subgroup_or_bias_evidence_expected": true,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "The cited pre-market guidance is dated 1 April 2026. Timing for provincial data access depends on the custodian and province.",
+    "official_source_urls": [
+      "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/application-information/guidance-documents/pre-market-guidance-machine-learning-enabled-medical-devices.html",
+      "https://www.ontario.ca/laws/statute/04p03"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "au-tga",
+    "jurisdiction": "Australia",
+    "authority_name": "Therapeutic Goods Administration (TGA)",
+    "route_type": "device-evidence",
+    "legal_basis": "Therapeutic Goods Act 1989 and Therapeutic Goods (Medical Devices) Regulations 2002, including software-specific classification rules.",
+    "ai_secondary_use_scope": "Software with an intended medical purpose can be regulated as a device, including software using AI. The regulatory route turns on the intended purpose and applicable classification, exclusions or exemptions. Access to health data for training is a separate matter.",
+    "spe_or_sde_required": false,
+    "required_application_evidence": [
+      "Intended purpose and applicable software classification",
+      "Evidence of conformity with applicable essential principles and risk-class requirements"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": false,
+    "key_milestones_or_timelines": "Check the applicable conformity assessment and inclusion process before supplying regulated software. Timing varies by classification and route.",
+    "official_source_urls": [
+      "https://www.legislation.gov.au/C2004A03952/latest/text",
+      "https://www.legislation.gov.au/F2002B00237/latest/text"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  },
+  {
+    "gateway_id": "hk-hadcl",
+    "jurisdiction": "Hong Kong",
+    "authority_name": "Hospital Authority research data access and Data Collaboration Lab (HADCL)",
+    "route_type": "research-access",
+    "legal_basis": "Personal Data (Privacy) Ordinance (Cap. 486) and the Hospital Authority mechanism for external academic research data requests.",
+    "ai_secondary_use_scope": "The Hospital Authority assesses external academic research requests case by case. The research purpose and data needs must support the request. Appropriate off-site provision is possible under the separate research request mechanism.",
+    "spe_or_sde_required": false,
+    "required_application_evidence": [
+      "Research purpose and requestor details",
+      "Data fields, population and format needed for the study",
+      "Privacy protections and supplementary information requested during assessment"
+    ],
+    "subgroup_or_bias_evidence_expected": false,
+    "disclosure_control_expected": true,
+    "key_milestones_or_timelines": "The legacy Lab page reports a transition to new services. The separate external request process describes expedited and customised applications, with longer turnaround for complex requests.",
+    "official_source_urls": [
+      "https://www3.ha.org.hk/data/Home/PrivacyPolicy",
+      "https://www3.ha.org.hk/data/dcl/",
+      "https://www3.ha.org.hk/data/Provision/Index/",
+      "https://www3.ha.org.hk/data/Provision/ApplicationProcedure"
+    ],
+    "presencis_canonical_url": "https://presencis.com/regulations/"
+  }
+]

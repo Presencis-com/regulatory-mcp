@@ -1,6 +1,6 @@
 {
   "name": "@presencis/regulatory-mcp",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Read-only stdio MCP server for public Presencis regulatory frameworks, crosswalks, and compliance questions.",
   "license": "Apache-2.0",
   "type": "module",
@@ -13,6 +13,7 @@
   "files": [
     "dist",
     "data/corpus-snapshot.json",
+    "data/health-data-gateways.json",
     "README.md",
     "LICENSE"
   ],
