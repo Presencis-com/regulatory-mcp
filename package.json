@@ -1,6 +1,6 @@
 {
   "name": "@presencis/regulatory-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read-only stdio MCP server for public Presencis regulatory frameworks, crosswalks, and compliance questions.",
   "license": "Apache-2.0",
   "type": "module",
@@ -50,5 +50,6 @@
   ],
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "mcpName": "io.github.Presencis-com/regulatory-mcp"
 }
