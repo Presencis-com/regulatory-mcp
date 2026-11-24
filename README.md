@@ -1,5 +1,7 @@
 # @presencis/regulatory-mcp
 
+[![Presencis-com/regulatory-mcp MCP server](https://glama.ai/mcp/servers/Presencis-com/regulatory-mcp/badges/score.svg)](https://glama.ai/mcp/servers/Presencis-com/regulatory-mcp)
+
 Read-only [Model Context Protocol](https://modelcontextprotocol.io) server for the public Presencis regulatory corpus. It answers from a bundled JSON snapshot. It does not open network connections and it does not write files.
 
 Tools:
