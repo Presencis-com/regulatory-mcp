@@ -165,7 +165,7 @@ test("stdio MCP serves seven read-only tools and rejects bad ids", async () => {
       name: "find_crosswalk",
       arguments: { source_id: "ccpa", target_id: "hipaa" },
     }));
-    assert.ok(cross.comparisons.some((item) => item.canonicalUrl === "https://presencis.com/comparisons/ccpa-vs-hipaa/"));
+    assert.ok(cross.comparisons.some((item) => item.canonicalUrl === "https://presencis.com/regulations/comparisons/ccpa-vs-hipaa/"));
     assert.match(toolError(await client.request("tools/call", {
       name: "find_crosswalk",
       arguments: { source_id: "gdpr", target_id: "ru-152fz" },
